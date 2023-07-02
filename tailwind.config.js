@@ -38,7 +38,11 @@ module.exports = {
       'passive': '#A6ADBA',
       'lite-passive':'#d8dbe0',
       'dark-passive':'#595245',
-      'vamp': '#080808'
+      'vamp': '#080808',
+      'leather': '#333b3a',
+      'pink-passive': '#eeaeb6',
+      'leather-passive': '#2f4f4f',
+      'leather-dark': '#224a44'
     },
     fontFamily: {
       main: ['Mitr ', 'sans-serif'],

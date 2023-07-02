@@ -31,6 +31,26 @@ const Credit = () => {
           Unsplash
         </a>
       </p>
+      <p>
+        Photo by{" "}
+        <a href="https://unsplash.com/@josholalde?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Josh Olalde
+        </a>{" "}
+        on{" "}
+        <a href="https://unsplash.com/photos/ntUHd_fGMQk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Unsplash
+        </a>
+        <p>
+          Photo by{" "}
+          <a href="https://unsplash.com/@davidhurley?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            David Hurley
+          </a>{" "}
+          on{" "}
+          <a href="https://unsplash.com/photos/iHvSuG7TQ1I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Unsplash
+          </a>
+        </p>
+      </p>
     </>
   );
 };
