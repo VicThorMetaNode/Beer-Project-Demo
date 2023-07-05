@@ -3,7 +3,7 @@ const Join = () => {
     <>
       <section className="w-full h-screen  min-h-xl bg-leather  join-section">
         <div className="mx-auto max-w-980 ">
-          <div className="max-w-[490px] w-full py-44 md:pl-0 flex md:items-center flex-col pl-10  ">
+          <div className="max-w-[490px] w-full py-44  flex items-center  flex-col   ">
             <div>
               <h4 className="font-main font-bold text-alt-white text-xl md:text-2xl 2xl:text-4xl uppercase tracking-wide">
                 Join & get rewards{" "}
@@ -18,10 +18,10 @@ const Join = () => {
               <img
                 src="/fugushima.webp"
                 alt="photo by Muhammad Syahid Abdillah"
-                className="h-[15rem] w-auto 2xl:h-[20rem]"
+                className="h-[15rem] w-auto 2xl:h-[20rem] animate-float-vertical"
               />
             </div>
-            <div className="flex justify-start  gap-5 ">
+            <div className="flex justify-center  gap-5 ">
               <button className="btn bg-leather-passive hover:bg-leather-dark text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
                 Buy now
               </button>

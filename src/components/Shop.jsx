@@ -1,6 +1,16 @@
 const Shop = () => {
+  const handleTopBtn = () => {
+    const heroSection = document.querySelector(".hero-section");
+
+    // Scroll to the 'JOIN' section
+    window.scrollTo({
+      top: heroSection.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <section className=" shop-section x-auto max-w-980 w-full flex items-center flex-col py-12 px-0 h-screen box-border ">
+    <section className=" shop-section x-auto max-w-980 w-full flex items-center flex-col py-12 px-0 h-screen box-border shop-section">
       <div>
         <p className="text-center font-sub text-lg text-green-600">
           Fugu Brewing Co.
@@ -21,7 +31,10 @@ const Shop = () => {
         </button>
       </div>
       <div className="fixed bottom-10 right-10">
-        <button className="btn glass  text-white font-sub text-lg 2xl:text-xl capitalize">
+        <button
+          className="btn glass text-white font-sub text-lg 2xl:text-xl capitalize"
+          onClick={handleTopBtn}
+        >
           Top
         </button>
       </div>

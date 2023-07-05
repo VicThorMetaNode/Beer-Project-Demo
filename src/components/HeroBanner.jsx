@@ -13,9 +13,22 @@ const HeroBanner = () => {
       behavior: "smooth",
     });
   };
+
+  const handleShopBtn = () => {
+    //target the 'JOIN' section
+    const element = document.querySelector(".shop-section");
+    //scroll down to the section
+    window.scrollTo({
+      //it takes 3 elements: top, left; behavior
+      //?= if element not defined don't execute the command
+      top: element?.getBoundingClientRect().top,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
-      <section className="mx-auto max-w-980 w-full box-border md:h-[calc(100vh - 40px)] h-screen  md:pt-40 pt-20 relative z-10 min-h-831">
+      <section className="mx-auto max-w-980 w-full box-border md:h-[calc(100vh - 40px)] h-screen  md:pt-40 pt-20 relative z-10 min-h-831 hero-section">
         <div className="flex items-center flex-col">
           <div className="px-4">
             <h1 className="font-main font-bold text-alt-white text-4xl md:text-5xl 2xl:text-9xl text-center uppercase">
@@ -30,7 +43,10 @@ const HeroBanner = () => {
               </h2>
             </div>
             <div className="flex justify-center 2xl:justify-end gap-5 mt-5 2xl:mt-10  ">
-              <button className="btn bg-green-600 hover:bg-green-800 text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
+              <button
+                className="btn bg-green-600 hover:bg-green-800 text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize"
+                onClick={handleShopBtn}
+              >
                 Shop Now
               </button>
               <button
