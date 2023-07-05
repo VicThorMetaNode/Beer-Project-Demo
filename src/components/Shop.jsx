@@ -32,7 +32,7 @@ const Shop = () => {
       </div>
       <div className="fixed bottom-10 right-10">
         <button
-          className="btn glass text-white font-sub text-lg 2xl:text-xl capitalize"
+          className="btn glass  text-white font-sub text-lg 2xl:text-xl capitalize hover:text-slate-500"
           onClick={handleTopBtn}
         >
           Top
