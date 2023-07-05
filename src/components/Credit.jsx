@@ -50,6 +50,16 @@ const Credit = () => {
             Unsplash
           </a>
         </p>
+        <p>
+          Photo by{" "}
+          <a href="https://unsplash.com/@magicmind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Magic Mind
+          </a>{" "}
+          on{" "}
+          <a href="https://unsplash.com/photos/OSk4lO--UsA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Unsplash
+          </a>
+        </p>
       </p>
     </>
   );

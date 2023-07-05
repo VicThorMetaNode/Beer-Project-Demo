@@ -1,9 +1,9 @@
 const Join = () => {
   return (
     <>
-      <section className="w-full h-screen  min-h-xl bg-leather  join-section">
+      <section className="w-full h-screen  min-h-xl bg-leather join-section">
         <div className="mx-auto max-w-980 ">
-          <div className="max-w-[490px] w-full py-44  flex items-center  flex-col   ">
+          <div className="max-w-[490px] w-full py-44  flex items-center  flex-col join-section-content opacity-0">
             <div>
               <h4 className="font-main font-bold text-alt-white text-xl md:text-2xl 2xl:text-4xl uppercase tracking-wide">
                 Join & get rewards{" "}

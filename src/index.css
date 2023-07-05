@@ -17,11 +17,11 @@
 /* scrollbar */
 /* ::-webkit-scrollbar {
   width: 10px;
-  background-color: theme(colors.main);
+  background-color: theme(colors.main.DEFAULT);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: theme('colors.main');
+  background-color: theme('colors.main.');
   border-radius: 10px;
   border: 1px solid theme('colors.sub');
 } */

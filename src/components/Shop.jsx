@@ -10,7 +10,7 @@ const Shop = () => {
     });
   };
   return (
-    <section className=" shop-section x-auto max-w-980 w-full flex items-center flex-col py-12 px-0 h-screen box-border shop-section">
+    <section className=" shop-section x-auto max-w-980 w-full flex items-center flex-col py-12 px-0 h-screen box-border shop-section opacity-0">
       <div>
         <p className="text-center font-sub text-lg text-green-600">
           Fugu Brewing Co.

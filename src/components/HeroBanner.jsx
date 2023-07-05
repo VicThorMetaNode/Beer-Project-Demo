@@ -1,5 +1,3 @@
-// import WebgiViewer from "./WebgiViewer";
-
 const HeroBanner = () => {
   const handleJoinBtn = () => {
     //target the 'JOIN' section
@@ -28,7 +26,7 @@ const HeroBanner = () => {
   };
   return (
     <>
-      <section className="mx-auto max-w-980 w-full box-border md:h-[calc(100vh - 40px)] h-screen  md:pt-40 pt-20 relative z-10 min-h-831 hero-section">
+      <section className="mx-auto max-w-980 w-full box-border md:h-[calc(100vh - 40px)] h-screen  md:pt-40 pt-20 relative z-10 min-h-831 hero-section ">
         <div className="flex items-center flex-col">
           <div className="px-4">
             <h1 className="font-main font-bold text-alt-white text-4xl md:text-5xl 2xl:text-9xl text-center uppercase">
@@ -59,8 +57,8 @@ const HeroBanner = () => {
           </div>
 
           {/* <div className="">
-        <WebgiViewer />
-      </div> */}
+            <WebgiViewer />
+          </div> */}
         </div>
         <div className="flex justify-end md:mt-[-10rem] mt-[3rem] 2xl:mt-[-0rem]">
           <img src="/syahid.png" alt="photo by Muhammad Syahid Abdillah" />
