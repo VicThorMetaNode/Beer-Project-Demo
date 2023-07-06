@@ -14,16 +14,16 @@ const Join = () => {
                 Fugu Discovery Pack
               </h5>
             </div>
-            <div>
+            <div className="py-4">
               <img
-                src="/fugushima.webp"
+                src="/magic.png"
                 alt="photo by Muhammad Syahid Abdillah"
-                className="h-[15rem] w-auto 2xl:h-[20rem] animate-float-vertical"
+                className="h-[15rem] w-auto 2xl:h-[20rem] "
               />
             </div>
             <div className="flex justify-center  gap-5 ">
               <button className="btn bg-leather-passive hover:bg-leather-dark text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
-                Buy now
+                Discover
               </button>
               <button className="btn bg-pink-passive hover:bg-purple-400 text-dark-passive  font-sub text-lg 2xl:text-xl capitalize">
                 Add to cart

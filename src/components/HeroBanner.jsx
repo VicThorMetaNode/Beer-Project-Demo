@@ -27,8 +27,11 @@ const HeroBanner = () => {
   return (
     <>
       <section className="mx-auto max-w-980 w-full box-border md:h-[calc(100vh - 40px)] h-screen  md:pt-40 pt-20 relative z-10 min-h-831 hero-section ">
-        <div className="flex items-center flex-col">
-          <div className="px-4">
+        <div className="flex justify-end md:hidden mt-[-5rem]">
+          <img src="/syahid.png" alt="photo by Muhammad Syahid Abdillah" />
+        </div>
+        <div className="flex items-center flex-col justify-center mt-10 md:mt-0">
+          <div className="px-4 ">
             <h1 className="font-main font-bold text-alt-white text-4xl md:text-5xl 2xl:text-9xl text-center uppercase">
               B<span className="italic text-lite-passive">EE</span>R S
               <span className="italic text-lite-passive">HO</span>P PR
@@ -51,7 +54,7 @@ const HeroBanner = () => {
                 className="btn bg-purple-300 hover:bg-purple-400 text-dark-passive px-8 font-sub text-lg 2xl:text-xl capitalize animate-pulse"
                 onClick={handleJoinBtn}
               >
-                join
+                packs
               </button>
             </div>
           </div>
@@ -60,7 +63,7 @@ const HeroBanner = () => {
             <WebgiViewer />
           </div> */}
         </div>
-        <div className="flex justify-end md:mt-[-10rem] mt-[3rem] 2xl:mt-[-0rem]">
+        <div className="md:flex justify-end md:mt-[-10rem] mt-[3rem] 2xl:mt-[-0rem] hidden ">
           <img src="/syahid.png" alt="photo by Muhammad Syahid Abdillah" />
         </div>
       </section>

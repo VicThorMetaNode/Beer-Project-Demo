@@ -25,14 +25,27 @@ const Shop = () => {
           </p>
         </div>
       </div>
-      <div>
-        <button className="btn bg-green-600 hover:bg-green-800 text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
-          Try me
+
+      <div className="flex justify-center  gap-5 ">
+        <button className="btn bg-leather-passive hover:bg-leather-dark text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
+          Buy now
+        </button>
+        <button className="btn bg-pink-passive hover:bg-purple-400 text-dark-passive  font-sub text-lg 2xl:text-xl capitalize">
+          Add to cart
         </button>
       </div>
+
+      <div className="pt-10">
+        <img
+          src="/fugushima.webp"
+          alt="photo by Muhammad Syahid Abdillah"
+          className="h-[15rem] w-auto 2xl:h-[20rem] animate-float-vertical"
+        />
+      </div>
+
       <div className="fixed bottom-10 right-10">
         <button
-          className="btn glass  text-white font-sub text-lg 2xl:text-xl capitalize hover:text-slate-500"
+          className="btn bg-main  text-white font-sub text-lg 2xl:text-xl capitalize  md:hover:bg-leather btn-active hover:bg-main "
           onClick={handleTopBtn}
         >
           Top
