@@ -1,6 +1,6 @@
 // import MagicViewer from "./MagicViewer";
 
-import WebgiViewer from "./WebgiViewer";
+// import WebgiViewer from "./WebgiViewer";
 
 const Join = () => {
   return (
@@ -15,25 +15,25 @@ const Join = () => {
             </div>
             <div>
               <h5 className="font-main font-normal text-passive text-lg md:text-xl 2xl:text-3xl ">
-                Fugu Discovery Pack
+                Beer Project Discovery Pack
               </h5>
             </div>
-            {/* <div className="py-4 md:hidden">
+            <div className="py-4 hover:scale-110 transition-transform duration-300">
               <img
-                src="/magic.png"
+                src="/bucket.png"
                 alt="photo by Muhammad Syahid Abdillah"
                 className="h-[15rem] w-auto 2xl:h-[20rem] "
               />
-            </div> */}
+            </div>
 
-            <div>
+            {/* <div>
               <WebgiViewer
                 glbFile="magic.glb"
                 controlsEnabled={true}
                 canvasClassName="w-[15rem] h-[15rem] 2xl:w-[25rem] 2xl:h-[25rem]"
                 scrollAnimationEnabled={false}
               />
-            </div>
+            </div> */}
 
             <div className="flex justify-center  gap-5 ">
               <button className="btn bg-leather-passive hover:bg-leather-dark text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">

@@ -1,3 +1,5 @@
+import WebgiViewer from "./WebgiViewer";
+
 const Shop = () => {
   const handleTopBtn = () => {
     // Scroll to the 'JOIN' section
@@ -23,6 +25,14 @@ const Shop = () => {
           </p>
         </div>
       </div>
+      <div>
+        <WebgiViewer
+          glbFile="coconut.glb"
+          controlsEnabled={true}
+          canvasClassName="w-[20rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[25rem]"
+          scrollAnimationEnabled={false}
+        />
+      </div>
 
       <div className="flex justify-center  gap-5 ">
         <button className="btn bg-leather-passive hover:bg-leather-dark text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
@@ -33,7 +43,7 @@ const Shop = () => {
         </button>
       </div>
 
-      <div className="pt-10 flex flex-col md:flex-row">
+      {/* <div className="pt-10 flex flex-col md:flex-row">
         <div className="hover:scale-90 transition-transform duration-300">
           <img
             src="/fugushima.webp"
@@ -55,7 +65,7 @@ const Shop = () => {
             className="h-[15rem] w-auto 2xl:h-[20rem] animate-float-vertical"
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="fixed bottom-10 right-10">
         <button
