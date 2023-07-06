@@ -1,3 +1,7 @@
+// import MagicViewer from "./MagicViewer";
+
+import WebgiViewer from "./WebgiViewer";
+
 const Join = () => {
   return (
     <>
@@ -14,13 +18,23 @@ const Join = () => {
                 Fugu Discovery Pack
               </h5>
             </div>
-            <div className="py-4">
+            {/* <div className="py-4 md:hidden">
               <img
                 src="/magic.png"
                 alt="photo by Muhammad Syahid Abdillah"
                 className="h-[15rem] w-auto 2xl:h-[20rem] "
               />
+            </div> */}
+
+            <div>
+              <WebgiViewer
+                glbFile="magic.glb"
+                controlsEnabled={true}
+                canvasClassName="w-[15rem] h-[15rem] 2xl:w-[25rem] 2xl:h-[25rem]"
+                scrollAnimationEnabled={false}
+              />
             </div>
+
             <div className="flex justify-center  gap-5 ">
               <button className="btn bg-leather-passive hover:bg-leather-dark text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
                 Discover

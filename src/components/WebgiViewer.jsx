@@ -1,7 +1,8 @@
 import { useRef, useCallback, useEffect } from "react";
+import PropTypes from "prop-types";
 import {
   ViewerApp,
-  // AssetManagerPlugin,
+  AssetManagerPlugin,
   TonemapPlugin,
   GBufferPlugin,
   ProgressivePlugin,
@@ -18,10 +19,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 import { scrollAnimation } from "../lib/scroll-animation";
 
-const WebgiViewer = () => {
+const WebgiViewer = ({
+  glbFile,
+  controlsEnabled,
+  containerClassName,
+  canvasClassName,
+  scrollAnimationEnabled,
+}) => {
   const canvasRef = useRef(null);
 
-  //useCallBack to memorize and don't render every time
+  // useCallback to memorize and don't render every time
   const memorizedScrollAnimation = useCallback((position, target, onUpdate) => {
     if (position && target && onUpdate) {
       scrollAnimation(position, target, onUpdate);
@@ -34,8 +41,8 @@ const WebgiViewer = () => {
         canvas: canvasRef.current,
       });
 
-      // const manager = await viewer.addPlugin(AssetManagerPlugin);
-      //get access to camera settings: position & target; to animate the 3d model
+      const manager = await viewer.addPlugin(AssetManagerPlugin);
+      // Get access to camera settings: position & target; to animate the 3D model
       const camera = viewer.scene.activeCamera;
       const position = camera.position;
       const target = camera.target;
@@ -51,35 +58,42 @@ const WebgiViewer = () => {
 
       viewer.renderer.refreshPipeline();
 
-      // await manager.addFromPath("rabbit.glb");
+      await manager.addFromPath(glbFile);
 
-      //remove background color
+      // Remove background color
       viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
-      //unable users to interact with the scene then set to false
-      viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false });
-      //on every reload on top of the website (top, left)
+      // Enable or disable user interaction with the scene based on controlsEnabled
+      viewer.scene.activeCamera.setCameraOptions({ controlsEnabled });
+      // Scroll to the top of the website (top, left)
       window.scrollTo(0, 0);
 
-      //update camera position only under specific requests
+      // Update camera position only under specific requests
       let needsUpdate = true;
       const onUpdate = () => {
-        //to tell that the viewer and position need to be updated
+        // Tell that the viewer and position need to be updated
         needsUpdate = true;
         viewer.setDirty();
       };
-      //add a listener to the viewer so it updates the camera's position if needed
+      // Add a listener to the viewer so it updates the camera's position if needed
       viewer.addEventListener("preFrame", () => {
         if (needsUpdate) {
           camera.positionUpdated(true);
           needsUpdate = false;
         }
       });
-      memorizedScrollAnimation(position, target, onUpdate);
+      if (scrollAnimationEnabled) {
+        memorizedScrollAnimation(position, target, onUpdate);
+      }
       return viewer;
     } catch (error) {
       console.error("Error setting up viewer:", error);
     }
-  }, [memorizedScrollAnimation]);
+  }, [
+    glbFile,
+    controlsEnabled,
+    scrollAnimationEnabled,
+    memorizedScrollAnimation,
+  ]);
 
   useEffect(() => {
     let viewer;
@@ -98,14 +112,18 @@ const WebgiViewer = () => {
   }, [setupViewer]);
 
   return (
-    <div className="fixed flex flex-col items-center justify-end top-0 pointer-events-none min-h-screen bg-transparent">
-      <canvas
-        id="webgi-canvas"
-        ref={canvasRef}
-        className="w-full h-full bg-transparent"
-      />
+    <div className={containerClassName}>
+      <canvas id="webgi-canvas" ref={canvasRef} className={canvasClassName} />
     </div>
   );
+};
+
+WebgiViewer.propTypes = {
+  glbFile: PropTypes.string,
+  controlsEnabled: PropTypes.bool,
+  scrollAnimationEnabled: PropTypes.bool,
+  containerClassName: PropTypes.string,
+  canvasClassName: PropTypes.string,
 };
 
 export default WebgiViewer;

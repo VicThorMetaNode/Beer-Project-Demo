@@ -1,3 +1,6 @@
+// import RabbitViewer from "./RabbitViewer";
+import WebgiViewer from "./WebgiViewer";
+
 const HeroBanner = () => {
   const handleJoinBtn = () => {
     //target the 'JOIN' section
@@ -48,24 +51,30 @@ const HeroBanner = () => {
                 className="btn bg-green-600 hover:bg-green-800 text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize"
                 onClick={handleShopBtn}
               >
-                Shop Now
+                Discover more
               </button>
               <button
                 className="btn bg-purple-300 hover:bg-purple-400 text-dark-passive px-8 font-sub text-lg 2xl:text-xl capitalize animate-pulse"
                 onClick={handleJoinBtn}
               >
-                packs
+                buy packs
               </button>
             </div>
           </div>
 
-          {/* <div className="">
-            <WebgiViewer />
-          </div> */}
+          <div>
+            <WebgiViewer
+              glbFile="rabbit.glb"
+              controlsEnabled={false}
+              containerClassName="fixed md:flex flex-col justify-end md:top-10 right-[-7rem] pointer-events-none min-h-screen bg-transparent hidden animate-float-vertical"
+              canvasClassName="w-[40rem] h-[40rem]"
+              scrollAnimationEnabled={true}
+            />
+          </div>
         </div>
-        <div className="md:flex justify-end md:mt-[-10rem] mt-[3rem] 2xl:mt-[-0rem] hidden ">
+        {/* <div className="md:flex justify-end md:mt-[-10rem] mt-[3rem] 2xl:mt-[-0rem] hidden ">
           <img src="/syahid.png" alt="photo by Muhammad Syahid Abdillah" />
-        </div>
+        </div> */}
       </section>
     </>
   );

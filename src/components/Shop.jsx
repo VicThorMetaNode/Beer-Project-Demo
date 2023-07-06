@@ -1,10 +1,8 @@
 const Shop = () => {
   const handleTopBtn = () => {
-    const heroSection = document.querySelector(".hero-section");
-
     // Scroll to the 'JOIN' section
     window.scrollTo({
-      top: heroSection.offsetTop,
+      top: 0,
       left: 0,
       behavior: "smooth",
     });
@@ -35,12 +33,28 @@ const Shop = () => {
         </button>
       </div>
 
-      <div className="pt-10">
-        <img
-          src="/fugushima.webp"
-          alt="photo by Muhammad Syahid Abdillah"
-          className="h-[15rem] w-auto 2xl:h-[20rem] animate-float-vertical"
-        />
+      <div className="pt-10 flex flex-col md:flex-row">
+        <div className="hover:scale-90 transition-transform duration-300">
+          <img
+            src="/fugushima.webp"
+            alt="photo by Muhammad Syahid Abdillah"
+            className="h-[15rem] w-auto 2xl:h-[20rem] animate-float-vertical "
+          />
+        </div>
+        <div className="hover:scale-90 transition-transform duration-300">
+          <img
+            src="/hc.webp"
+            alt="photo by Muhammad Syahid Abdillah"
+            className="h-[15rem] w-auto 2xl:h-[20rem] animate-float-vertical"
+          />
+        </div>
+        <div className="hover:scale-90 transition-transform duration-300">
+          <img
+            src="/samu.webp"
+            alt="photo by Muhammad Syahid Abdillah"
+            className="h-[15rem] w-auto 2xl:h-[20rem] animate-float-vertical"
+          />
+        </div>
       </div>
 
       <div className="fixed bottom-10 right-10">

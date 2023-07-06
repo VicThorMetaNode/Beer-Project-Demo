@@ -27,7 +27,7 @@ export const scrollAnimation = (position, target, onUpdate) => {
         trigger: '.join-section',
         start: "top bottom",
         end: "top top",
-        scrub: 2,
+        scrub: 4,
         immediateRender: false
      },
     
