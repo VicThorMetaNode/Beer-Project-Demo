@@ -57,9 +57,9 @@ plugins: [
   require("daisyui"),
 
 ],
-daisyui: {
-  themes: ["light", "dark", "coffee", "cyberpunk", "cupcake"],
-},
+// daisyui: {
+//   themes: ["light", "dark", "coffee", "cyberpunk", "cupcake"],
+// },
 }
 
 

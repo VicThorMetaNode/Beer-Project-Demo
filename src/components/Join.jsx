@@ -1,13 +1,9 @@
-// import MagicViewer from "./MagicViewer";
-
-// import WebgiViewer from "./WebgiViewer";
-
 const Join = () => {
   return (
     <>
       <section className="w-full h-screen  min-h-xl bg-leather join-section">
         <div className="mx-auto max-w-980 ">
-          <div className="max-w-[490px] w-full py-44  flex items-center  flex-col join-section-content opacity-0">
+          <div className="max-w-[490px]  py-44  flex items-center  flex-col join-section-content opacity-0 justify-center">
             <div>
               <h4 className="font-main font-bold text-alt-white text-xl md:text-2xl 2xl:text-4xl uppercase tracking-wide">
                 Join & get rewards{" "}
@@ -25,16 +21,6 @@ const Join = () => {
                 className="h-[15rem] w-auto 2xl:h-[20rem] "
               />
             </div>
-
-            {/* <div>
-              <WebgiViewer
-                glbFile="magic.glb"
-                controlsEnabled={true}
-                canvasClassName="w-[15rem] h-[15rem] 2xl:w-[25rem] 2xl:h-[25rem]"
-                scrollAnimationEnabled={false}
-              />
-            </div> */}
-
             <div className="flex justify-center  gap-5 ">
               <button className="btn bg-leather-passive hover:bg-leather-dark text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
                 Discover

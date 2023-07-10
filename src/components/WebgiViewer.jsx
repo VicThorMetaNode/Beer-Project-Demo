@@ -39,6 +39,7 @@ const WebgiViewer = ({
     try {
       const viewer = new ViewerApp({
         canvas: canvasRef.current,
+        transparent: true,
       });
 
       const manager = await viewer.addPlugin(AssetManagerPlugin);
