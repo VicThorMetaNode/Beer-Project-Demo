@@ -13,7 +13,7 @@ const Product = () => {
 
           <div className="flex items-center justify-center my-5">
             <WebgiViewer
-              glbFile="rabbit.glb"
+              glbFile="magic.glb"
               controlsEnabled={true}
               canvasClassName="w-[25rem] h-[25rem] "
               scrollAnimationEnabled={false}
