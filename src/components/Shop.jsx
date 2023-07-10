@@ -1,5 +1,7 @@
 // import WebgiViewer from "./WebgiViewer";
 
+import { Link } from "react-router-dom";
+
 const Shop = () => {
   const handleTopBtn = () => {
     // Scroll to the 'JOIN' section
@@ -86,9 +88,11 @@ const Shop = () => {
             <p>Refreshing and extremely easy to drink !</p>
 
             <div className="card-actions justify-start mt-5">
-              <button className="btn btn-secondary font-sub text-lg 2xl:text-xl capitalize">
-                Order Now
-              </button>
+              <Link to={"/product"}>
+                <button className="btn btn-secondary font-sub text-lg 2xl:text-xl capitalize">
+                  Order Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
