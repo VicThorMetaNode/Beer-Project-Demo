@@ -36,15 +36,15 @@ const Shop = () => {
           scrollAnimationEnabled={false}
         />
       </div> */}
-
+      {/* 
       <div className="flex justify-center  gap-5 ">
-        {/* <button className="btn bg-leather-passive hover:bg-leather-dark text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
+        <button className="btn bg-leather-passive hover:bg-leather-dark text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize">
           Buy now
-        </button> */}
+        </button>
         <button className="btn bg-pink-passive hover:bg-purple-400 text-dark-passive  font-sub text-lg 2xl:text-xl capitalize">
           Buy now
         </button>
-      </div>
+      </div> */}
 
       <div className="pt-10 md:flex flex-col md:flex-row hidden">
         <div className="hover:scale-90 transition-transform duration-300">
