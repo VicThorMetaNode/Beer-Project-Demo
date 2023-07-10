@@ -48,13 +48,13 @@ const HeroBanner = () => {
                 className="btn bg-green-600 hover:bg-green-800 text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize"
                 onClick={handleShopBtn}
               >
-                Discover more
+                shop now
               </button>
               <button
                 className="btn bg-purple-300 hover:bg-purple-400 text-dark-passive px-8 font-sub text-lg 2xl:text-xl capitalize animate-pulse"
                 onClick={handleJoinBtn}
               >
-                buy packs
+                discovery packs
               </button>
             </div>
           </div>
