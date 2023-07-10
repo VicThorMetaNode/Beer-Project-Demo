@@ -10,7 +10,7 @@ const Shop = () => {
     });
   };
   return (
-    <section className=" shop-section x-auto max-w-980 w-full flex items-center flex-col py-12 px-0 h-screen box-border shop-section opacity-0 ">
+    <section className=" shop-section x-auto max-w-980 w-full flex items-center flex-col py-12 px-0 h-screen box-border opacity-0 ">
       <div>
         <p className="text-center font-sub text-lg text-green-600">
           Fugu Brewing Co.
@@ -43,7 +43,7 @@ const Shop = () => {
         </button>
       </div>
 
-      <div className="pt-10 flex flex-col md:flex-row">
+      <div className="pt-10 md:flex flex-col md:flex-row hidden">
         <div className="hover:scale-90 transition-transform duration-300">
           <img
             src="/fugushima.webp"
@@ -67,25 +67,27 @@ const Shop = () => {
         </div>
       </div>
 
-      <article className="flex flex-col md:flex-row gap-5 pb-20">
-        <div className="card w-96 bg-base-100 shadow-xl md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
-          <figure className="py-2">
+      <article className="flex flex-col md:flex-row gap-5 pb-20 pt-10">
+        <div className="card w-96 bg-base-100 shadow-xl  md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
+          <figure className="py-2 md:animate-bounce">
             <img
               src="/fugushima.webp"
               alt="photo by Muhammad Syahid Abdillah"
               className="h-[15rem] w-auto 2xl:h-[20rem] "
             />
           </figure>
-          <div className="card-body ">
+          <div className="card-body items-center text-center md:items-start md:text-left">
             <h2 className="card-title">
               Fugushima
-              <div className="badge badge-accent">NEW</div>
+              <div className="badge badge-secondary animate-bounce md:animate-none ">
+                NEW
+              </div>
             </h2>
             <p>Refreshing and extremely easy to drink !</p>
 
             <div className="card-actions justify-start mt-5">
-              <button className="btn btn-primary font-sub text-lg 2xl:text-xl capitalize">
-                Buy Now
+              <button className="btn btn-secondary font-sub text-lg 2xl:text-xl capitalize">
+                Order Now
               </button>
             </div>
           </div>
@@ -99,7 +101,7 @@ const Shop = () => {
               className="h-[15rem] w-auto 2xl:h-[20rem] "
             />
           </figure>
-          <div className="card-body ">
+          <div className="card-body items-center text-center md:items-start md:text-left">
             <h2 className="card-title">Hop Circles</h2>
             <p>A heart-warming beer with notes of exotic fruits.</p>
 
@@ -122,7 +124,7 @@ const Shop = () => {
               className="h-[15rem] w-auto 2xl:h-[20rem] "
             />
           </figure>
-          <div className="card-body ">
+          <div className="card-body items-center text-center md:items-start md:text-left">
             <h2 className="card-title">Samurai</h2>
             <p>Refreshing and soft with a low alcohol content.</p>
 

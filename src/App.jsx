@@ -1,17 +1,14 @@
-import HeroBanner from "./components/HeroBanner";
-import Join from "./components/Join";
-
-import Shop from "./components/Shop";
-import WebgiViewer from "./components/WebgiViewer";
+import { Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Product from "./pages/Product";
 
 function App() {
   return (
     <>
-      <HeroBanner />
-      <Join />
-      <Shop />
-
-      <WebgiViewer />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/product" element={<Product />} />
+      </Routes>
     </>
   );
 }
