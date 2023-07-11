@@ -45,16 +45,16 @@ const HeroBanner = () => {
             </div>
             <div className="flex justify-center 2xl:justify-end gap-5 mt-5 2xl:mt-10  ">
               <button
-                className="btn bg-green-600 hover:bg-green-800 text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize"
+                className="btn bg-purple-300 hover:bg-purple-400 text-dark-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize "
+                onClick={handleJoinBtn}
+              >
+                beer packs
+              </button>
+              <button
+                className="btn bg-green-600 hover:bg-green-800 text-lite-passive 2xl:px-8 font-sub text-lg 2xl:text-xl shadow-xl capitalize animate-pulse"
                 onClick={handleShopBtn}
               >
                 shop now
-              </button>
-              <button
-                className="btn bg-purple-300 hover:bg-purple-400 text-dark-passive px-8 font-sub text-lg 2xl:text-xl capitalize animate-pulse"
-                onClick={handleJoinBtn}
-              >
-                discovery packs
               </button>
             </div>
           </div>
@@ -63,7 +63,7 @@ const HeroBanner = () => {
             <WebgiViewer
               glbFile="rabbit.glb"
               controlsEnabled={false}
-              containerClassName="fixed md:flex flex-col justify-end md:top-10 right-[-7rem] pointer-events-none min-h-screen bg-transparent hidden"
+              containerClassName="fixed md:flex flex-col justify-end md:top-10 right-[-7rem] pointer-events-none min-h-screen bg-transparent hidden animate-float-vertical"
               canvasClassName="w-[40rem] h-[40rem]"
               scrollAnimationEnabled={true}
             />
