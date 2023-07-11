@@ -71,7 +71,7 @@ const Shop = () => {
       </div>
 
       <article className="flex flex-col md:flex-row gap-5 pb-20 pt-10 ">
-        <div className="card w-96 md:bg-base-100 bg-leather shadow-xl  md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
+        <div className="card w-96 md:bg-base-100 bg-base-300 shadow-xl  md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
           <figure className="py-2 md:animate-bounce">
             <img
               src="/fugushima.webp"
@@ -98,7 +98,7 @@ const Shop = () => {
           </div>
         </div>
 
-        <div className="card w-96 md:bg-base-100 bg-leather shadow-xl md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
+        <div className="card w-96 md:bg-base-100 bg-base-300 shadow-xl md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
           <figure className="py-2">
             <img
               src="/hc.webp"
@@ -121,7 +121,7 @@ const Shop = () => {
           </div>
         </div>
 
-        <div className="card w-96 md:bg-base-100 bg-leather shadow-xl md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
+        <div className="card w-96 md:bg-base-100 bg-base-300 shadow-xl md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
           <figure className="py-2">
             <img
               src="/samu.webp"
@@ -163,7 +163,7 @@ const Shop = () => {
               />
             </div>
             <div className="card  bg-base-300 text-primary-content mx-2">
-              <div className="card-body">
+              <div className="card-body md:w-[40rem]">
                 <p className=" font-sub text-lg text-green-600">
                   Fugu Brewing Co.
                 </p>
