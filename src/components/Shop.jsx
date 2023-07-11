@@ -178,8 +178,12 @@ const Shop = () => {
                     Choose your pack
                   </p>
                   <div className="flex gap-2">
-                    <button className="btn">6-pack</button>
-                    <button className="btn">12-pack</button>
+                    <button className="btn bg-slate-600 font-sub text-alt-white md:hover:bg-slate-800">
+                      6-pack
+                    </button>
+                    <button className="btn bg-slate-600 font-sub text-alt-white md:hover:bg-slate-800">
+                      12-pack
+                    </button>
                   </div>
                 </div>
                 <div className="card-actions justify-end">
