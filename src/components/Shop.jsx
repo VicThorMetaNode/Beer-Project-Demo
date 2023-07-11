@@ -70,8 +70,8 @@ const Shop = () => {
         </div>
       </div>
 
-      <article className="flex flex-col md:flex-row gap-5 pb-20 pt-10">
-        <div className="card w-96 bg-base-100 shadow-xl  md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
+      <article className="flex flex-col md:flex-row gap-5 pb-20 pt-10 ">
+        <div className="card w-96 md:bg-base-100 bg-leather shadow-xl  md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
           <figure className="py-2 md:animate-bounce">
             <img
               src="/fugushima.webp"
@@ -80,7 +80,7 @@ const Shop = () => {
             />
           </figure>
           <div className="card-body items-center text-center md:items-start md:text-left">
-            <h2 className="card-title">
+            <h2 className="card-title text-alt-white">
               Fugushima
               <div className="badge badge-secondary animate-bounce md:animate-none ">
                 NEW
@@ -98,7 +98,7 @@ const Shop = () => {
           </div>
         </div>
 
-        <div className="card w-96 bg-base-100 shadow-xl md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
+        <div className="card w-96 md:bg-base-100 bg-leather shadow-xl md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
           <figure className="py-2">
             <img
               src="/hc.webp"
@@ -107,7 +107,7 @@ const Shop = () => {
             />
           </figure>
           <div className="card-body items-center text-center md:items-start md:text-left">
-            <h2 className="card-title">Hop Circles</h2>
+            <h2 className="card-title text-alt-white">Hop Circles</h2>
             <p>A heart-warming beer with notes of exotic fruits.</p>
 
             <div className="card-actions justify-start flex mt-5">
@@ -121,7 +121,7 @@ const Shop = () => {
           </div>
         </div>
 
-        <div className="card w-96 bg-base-100 shadow-xl md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
+        <div className="card w-96 md:bg-base-100 bg-leather shadow-xl md:hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  duration-300 transition-transform md:hover:scale-105">
           <figure className="py-2">
             <img
               src="/samu.webp"
@@ -130,7 +130,7 @@ const Shop = () => {
             />
           </figure>
           <div className="card-body items-center text-center md:items-start md:text-left">
-            <h2 className="card-title">Samurai</h2>
+            <h2 className="card-title text-alt-white">Samurai</h2>
             <p>Refreshing and soft with a low alcohol content.</p>
 
             <div className="card-actions justify-start flex mt-5">
