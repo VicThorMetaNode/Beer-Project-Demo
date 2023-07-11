@@ -15,16 +15,16 @@
 }
 
 /* scrollbar */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
   background-color: theme(colors.main.DEFAULT);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: theme('colors.main.');
+  background-color: theme(colors.main.DEFAULT);
   border-radius: 10px;
-  border: 1px solid theme('colors.sub');
-} */
+  border: 1px solid theme(colors.main.DEFAULT);
+}
 
 body, html {
   height: 100%;
